@@ -23,6 +23,6 @@
     "test": "karma start",
     "watchtest": "karma start --no-single-run --browsers Chrome",
     "lint": "prettier --write {*.js,tests/*.js}",
-    "precommit": "npm run lint && npm test"
+    "precommit": "npm run lint"
   }
 }
