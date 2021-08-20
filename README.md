@@ -4,6 +4,16 @@ Emits `forward` and `back` events on popstate. Completely transparent,
 preserves all History functionality and works with `location.hash`. Follows the
 same semantics as popstate.
 
+## Installation
+
+```sh
+# Yarn
+yarn add popstate-direction
+
+# npm
+npm install popstate-direction
+```
+
 ## Usage
 
 The library must be included before any call to `history.pushState` or
