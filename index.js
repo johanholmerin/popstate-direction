@@ -33,7 +33,7 @@ function onPopstate() {
 // Create functions which modify index
 function modifyStateFunction(func, n) {
   return (state, ...args) => {
-    func.call(history, { index: currentIndex + n, state }, ...args);
+    func.call(history, { ...state, index: currentIndex + n }, ...args);
     // Only update currentIndex if call succeeded
     currentIndex += n;
   };
